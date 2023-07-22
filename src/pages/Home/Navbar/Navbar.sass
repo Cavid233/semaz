@@ -1,0 +1,39 @@
+.navbar-container
+    height: 8vh
+    .navbar
+        height: 100%
+        width: 80%
+        margin-left: 10%
+        display: grid
+        grid-template-rows: 8% 92%
+        .blue-line-part
+            background-color: #2362af
+        .navbar-part
+            display: grid
+            grid-template-columns: 25% 75%
+            .logo
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                img
+                    min-height: 95%
+                    min-width: 95%
+            .links-container
+                display: flex
+                justify-content: space-around
+                align-items: center
+                .instagram
+                    cursor: pointer
+                .link
+                    padding: 10px
+                    border-radius: 5px
+                    cursor: pointer
+                    &:hover
+                        background-color: lightblue
+                        color: white
+                        transition-duration: 500ms
+                .language
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    cursor: pointer

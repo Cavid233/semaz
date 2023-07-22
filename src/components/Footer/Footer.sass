@@ -1,0 +1,49 @@
+.footer
+    height: 30vh
+    display: grid
+    grid-template-rows: 5% 75% 20%
+    .divder
+        background-color: #292929
+        height: 0.5px
+        border: none
+    .body
+        display: grid
+        grid-template-columns: repeat(3, 20%)
+        justify-content: center
+        .data
+            display: flex
+            flex-direction: column
+            align-items: center
+            .title
+                font-size: 1rem
+                font-weight: 800
+                margin-bottom: 1rem
+            .text
+                font-size: 0.8rem
+                font-weight: 400
+                margin-top: 0.5rem
+
+
+    .blue-line
+        background-color: #2362af
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        // padding: 10px
+        .blue-line-title
+            color: white
+            font-size: 0.8rem
+            font-weight: 600
+
+
+@media only screen and (max-width: 1000px)
+    .footer
+        height: 80vh
+        .body
+            grid-template-columns: repeat(2, 20%)
+            justify-content: space-around
+                // grid-row-start: 2
+            .data
+                align-items: flex-start
+
