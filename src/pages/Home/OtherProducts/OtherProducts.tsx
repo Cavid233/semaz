@@ -1,6 +1,7 @@
 import "./OtherProducts.sass";
 import grinderImage from "../../../assets/grinder.png";
 import juiceImage from "../../../assets/juice.png";
+import ProductCard from "../../../components/UI/ProductCard";
 import { Container } from "@mui/system";
 interface IOtherProducts { }
 
@@ -11,7 +12,11 @@ export default function OtherProducts(props: IOtherProducts) {
           <div className="title">DIGƏR MƏHSULLAR</div>
         </div>
         <div className="body">
-          <div className="product-card">
+          <ProductCard imageSrc={juiceImage} />
+          <ProductCard imageSrc={juiceImage} />
+          <ProductCard imageSrc={juiceImage} />
+          <ProductCard imageSrc={juiceImage} />
+          {/* <div className="product-card">
             <div className="img-wrapper">
               <img src={juiceImage} alt="" />
             </div>
@@ -47,7 +52,7 @@ export default function OtherProducts(props: IOtherProducts) {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
-          </div>
+          </div> */}
 
         </div>
     </div>

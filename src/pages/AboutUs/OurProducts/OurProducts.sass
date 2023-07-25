@@ -1,0 +1,82 @@
+.our-products
+    height: 140vh
+    display: grid
+    grid-template-rows: 10% 23% 67%
+    .title
+        font-size: 2rem
+        font-weight: 600
+        margin: auto
+    .tools
+        display: flex
+        justify-content: center
+        .sub-tools
+            width: 80%
+            display: grid
+            grid-template-rows: 20% 80%
+            .tools-title
+                display: flex
+                align-items: center
+                font-size: 1.5rem
+                font-weight: 600
+            .tools-list
+                margin-top: 10px
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                .list
+                    font-size: 1rem
+                    margin-top: 0.4rem
+                    margin-bottom: 0.4rem
+    .products
+        // background-color: pink
+        .body
+            display: flex
+            justify-content: center
+            width: 100%
+
+            .sub-body
+                width: 80%
+                display: grid
+                grid-template-columns: repeat(4, 240px)
+                gap: 3%
+                justify-content: space-between
+                align-items: center
+
+
+@media only screen and (max-width: 1200px)
+    .our-products
+        height: 230vh
+        .products
+            .body
+                .sub-body
+                    grid-template-columns: repeat(3, 300px)
+                    // gap: 0%
+                    // justify-content: flex-start
+                    // align-items: flex-start
+
+            // background-color: pink
+
+
+@media only screen and (max-width: 1000px)
+    .our-products
+        height: 280vh
+        grid-template-rows: 5% 20% 75%
+        .tools
+            .sub-tools
+                .tools-title
+                    justify-content: center
+                    font-size: 1rem
+                .tools-list
+                    align-content: space-around
+                    .list
+                        font-size: 0.8rem
+                    // justify-content: space-around
+
+        .products
+            .body
+                height: 100%
+                .sub-body
+                    grid-template-columns: repeat(2, 45%)
+                    .product-card
+        
+                

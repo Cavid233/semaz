@@ -25,6 +25,7 @@
             width: 50%
             display: flex
             justify-content: flex-end
+
             img
                 max-height: 100%
                 max-width: 100%
@@ -50,6 +51,61 @@
                     display: grid
                     grid-template-columns: 50% 50%
                     font-weight: 500
-                .text-box-details
                     font-size: 1rem
                     margin-bottom: 0.9rem
+                    
+
+
+@media only screen and (max-width: 1200px)
+    .hero-banner
+        .banner-container
+            .text-box-container
+                width: 70%
+                justify-content: center
+             
+
+
+
+@media only screen and (max-width: 1000px)
+    .hero-banner
+        height: 100vh
+        grid-template-rows: 10% 90%
+        .title-container
+
+            .sub-title-container
+                .main-text
+                    font-weight: 600
+                    font-size: 1rem
+                .detail-text
+                    font-size: 0.7rem
+
+        .banner-container
+            flex-direction: column
+            .img-wrapper-container
+                width: 100%
+                height: 45%
+                align-items: center
+                justify-content: center
+
+            .text-box-container
+                width: 100%
+                height: 55%
+                .text-box
+                    font-size: 1rem
+                    width: 40%
+                .text-box-details
+                    font-size: 0.6rem
+
+
+@media only screen and (max-width: 700px)
+    .hero-banner
+        .title-container
+            .sub-title-container
+                .main-text
+                    font-size: 0.8rem
+                .detail-text
+                    font-size: 0.6rem
+        .banner-container
+            .text-box-container
+                .text-box
+                    width: 60%

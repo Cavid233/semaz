@@ -28,8 +28,9 @@
                     padding: 10px
                     border-radius: 5px
                     cursor: pointer
+                    font-size: 1rem
                     &:hover
-                        background-color: lightblue
+                        background-color: #2362af
                         color: white
                         transition-duration: 500ms
                 .language
@@ -37,3 +38,47 @@
                     justify-content: center
                     align-items: center
                     cursor: pointer
+                .left-drawer-open-button
+                    display: none
+
+
+@media only screen and (max-width: 1200px)
+    .navbar-container
+        .navbar
+            .navbar-part
+                .links-container
+                    justify-content: flex-end
+
+                    .link
+                        display: none
+                    .left-drawer-open-button
+                        display: block
+
+
+
+.left-drawer
+    width: 340px
+    .drawer-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: .5rem 1rem
+        .drawer-header-title
+            font-size: 18px
+            font-weight: 500
+        .drawer-close
+            display: flex
+            align-items: center
+            font-size: 13px
+            font-weight: 500
+            .drawer-header-close
+                font-size: 24px
+                color: black
+    hr
+        margin: 0
+    .drawer-content
+        padding: 0 1rem
+        justify-content: center
+        align-items: center
+        .drawer-notf
+            text-align: center
